@@ -1,0 +1,23 @@
+@mixin mq-small{
+	@media (max-width: $screen-size-small){
+		@content;
+	}
+}
+
+@mixin mq-medium{
+	@media (min-width: $screen-size-small + 1px) and (max-width: $screen-size-medium){
+		@content;
+	}
+}
+
+@mixin mq-large{
+	@media (min-width: $screen-size-medium + 1px) and (max-width: $screen-size-large){
+		@content;
+	}
+}
+
+@mixin mq-extraLarge(){
+	@media (min-width: $screen-size-large + 1){
+		@content;
+	}
+}

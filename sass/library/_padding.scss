@@ -1,0 +1,188 @@
+/* Padding mixins */
+@mixin pad-base{
+	padding: $base-size;
+}
+
+@mixin pad-line{
+	padding: $line-size;
+}
+
+@mixin pad-small{
+	padding: $small-size;
+}
+
+@mixin pad-medium{
+	padding: $medium-size;
+}
+
+@mixin pad-large{
+	padding: $large-size;
+}
+
+@mixin pad-none{
+	padding: 0;
+}
+
+/* Bottom padding mixins */
+
+@mixin pad-bottom-base{
+	padding-bottom: $base-size;
+}
+
+@mixin pad-bottom-line{
+	padding-bottom: $line-size;
+}
+
+@mixin pad-bottom-small{
+	padding-bottom: $small-size;
+}
+
+@mixin pad-bottom-medium{
+	padding-bottom: $medium-size;
+}
+
+@mixin pad-bottom-large{
+	padding-bottom: $large-size;
+}
+
+@mixin pad-bottom-none{
+	padding-bottom: 0;
+}
+
+/* Top padding mixins */
+@mixin pad-top-base{
+	padding-top: $base-size;
+}
+
+@mixin pad-top-line{
+	padding-top: $line-size;
+}
+
+@mixin pad-top-small{
+	padding-top: $small-size;
+}
+
+@mixin pad-top-medium{
+	padding-top: $medium-size;
+	
+}
+
+@mixin pad-top-large{
+	padding-top: $large-size;
+}
+
+@mixin pad-top-none{
+	padding-top: 0;
+}
+
+/* Right padding mixins */
+@mixin pad-right-base{
+	padding-right: $base-size;
+}
+
+@mixin pad-right-line{
+	padding-right: $line-size;
+}
+
+@mixin pad-right-small{
+	padding-right: $small-size;
+}
+
+@mixin pad-right-medium{
+	padding-right: $medium-size;
+}
+
+@mixin pad-right-large{
+	padding-right: $large-size;
+}
+
+@mixin pad-right-none{
+	padding-right: none;
+}
+
+/* Left padding mxins */
+@mixin pad-left-base{
+	padding-left: $base-size;
+}
+
+@mixin pad-left-line{
+	padding-left: $line-size;
+}
+
+@mixin pad-left-small{
+	padding-left: $small-size;
+}
+
+@mixin pad-left-medium{
+	padding-left: $medium-size;
+}
+
+@mixin pad-left-large{
+	padding-left: $large-size;
+}
+
+@mixin pad-left-none{
+	padding-left: 0;
+}
+
+/* Horizontal padding mixins */
+@mixin pad-horz-base{
+	padding-left: $base-size;
+	padding-right: $base-size;
+}
+
+@mixin pad-horz-line{
+	padding-left: $line-size;
+	padding-right: $line-size;
+}
+
+@mixin pad-horz-small{
+	padding-right: $small-size;
+	padding-right: $small-size;
+}
+
+@mixin pad-horz-medium{
+	padding-left: $medium-size;
+	padding-right: $medium-size;
+}
+
+@mixin pad-horz-large{
+	padding-left: $large-size;
+	padding-right: $large-size;
+}
+
+@mixin pad-horz-none{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Vertical padding mixins */
+@mixin pad-vert-base{
+	padding-top: $base-size;
+	padding-bottom: $base-size;
+}
+
+@mixin pad-vert-line{
+	padding-top: $line-size;
+	padding-bottom: $line-size;
+}
+
+@mixin pad-vert-small{
+	padding-top: $small-size;
+	padding-bottom: $small-size;
+}
+
+@mixin pad-vert-medium{
+	padding-top: $medium-size;
+	padding-bottom: $medium-size;
+}
+
+@mixin pad-vert-large{
+	padding-top: $large-size;
+	padding-bottom: $large-size;
+}
+
+@mixin pad-vert-none{
+	padding-top: 0;
+	padding-bottom: 0;
+}

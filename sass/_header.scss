@@ -1,0 +1,179 @@
+header{
+	background: url(../images/hero-extra-large.jpg) left top no-repeat;
+	background-size: 100% auto;
+	
+	@include mq-small{
+		background: url(../images/hero-extra-large.jpg) 70% 0 no-repeat;
+		background-size: auto 195px;
+
+	}
+	
+}
+
+.page-header-menu{
+	@include flex-display;
+	@include flex-align-items(center);
+	@include flex-flow(row, nowrap);
+	padding-top: 20px;
+	margin-left: 320px;
+	margin-right: 320px;
+	@include mq-small{
+		padding-top: 0;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+.page-header-menu__first-part{
+	@include flex(1);
+	text-align: left;
+
+	a{
+		text-transform: uppercase;
+		color: $buttom-color;
+		text-decoration: none;
+		font: 0.6em "HelveticaNeue";
+	}
+}
+
+.page-header-menu__second-part{
+	@include flex(1);
+	text-align: center;
+	@include mq-small{
+		display: none;
+	}
+}
+
+.page-header-menu__third-part{
+	@include flex(1);
+	text-align: right;
+
+	a{
+		text-transform: uppercase;
+		color: $buttom-color;
+		text-decoration: none;
+		margin-left: 15px;
+		font: 0.6em "HelveticaNeue";
+	}
+}
+
+.page-header-content {
+	h1{
+		text-align: center;
+		color: $headline-color;
+		font: 2.5em "HelveticaNeue";
+		font-weight: bold;
+		padding-top: 120px;
+
+		@include mq-small{
+			padding-top: 15px;
+			font: 1.1em "HelveticaNeue";
+			font-weight: bold;
+		}
+
+		@include mq-medium{
+			font: 1.5em "HelveticaNeue";
+			font-weight: bold;
+			padding-top: 60px;
+		}
+
+		@include mq-large{
+			font: 1.5em "HelveticaNeue";
+			font-weight: bold;
+			padding-top: 60px;	
+		}
+	}
+
+}
+
+.page-header-content__buttons{
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 200px;
+
+	@include mq-small{
+		@include flex-display;
+		@include flex-flow(column, wrap);
+		padding-bottom: 30px;
+	}
+
+	@include mq-medium{
+		padding-bottom: 90px;
+	}
+
+	@include mq-large{
+		padding-bottom: 110px;
+	}
+
+	a{
+		text-decoration: none;
+		color: $buttom-color;
+		display: inline-block;
+		padding: 5px 80px;
+		border: solid 2px white;
+		border-radius: 5px;
+		font: 1.5em "HelveticaNeue";
+		font-weight: bold;
+		margin-left: 30px;
+
+		@include mq-small{
+			@include flex(1);
+			padding: 5px 10px;
+			font: 0.9em "HelveticaNeue";
+			font-weight: bold;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-top: 10px;
+		}
+
+		@include mq-medium{
+			font: 1em "HelveticaNeue";
+			font-weight: bold;
+
+		}
+
+		@include mq-large{
+			font: 1em "HelveticaNeue";					
+			font-weight: bold;
+		}
+	}
+}
+
+.page-header-signup-button{
+	background-color: $section2-background;
+	text-align: center;
+
+	@include mq-medium{
+
+	}	
+}
+
+.page-header-signup-button__button{
+	color: $buttom-color;
+	text-transform: uppercase;
+	font: 0.8em "HelveticaNeue";
+	text-decoration: none;
+	background-color: $sign-up-button-background; 
+	padding: 15px 30px;
+	border-radius: 3px;
+	margin: 30px auto;
+	display: inline-block;
+
+	@include mq-small{
+		margin: 5px auto;
+		padding: 5px 10px;
+		font: 0.6em "HelveticaNeue";
+	}
+
+	@include mq-medium{
+		margin: 15px auto;
+		padding: 8px 15px;
+		font: 0.7em "HelveticaNeue";
+	}
+
+	@include mq-large{
+		margin: 15px auto;
+		padding: 8px 15px;
+		font: 0.7em "HelveticaNeue";	
+	}
+}

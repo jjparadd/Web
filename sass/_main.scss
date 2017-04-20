@@ -1,0 +1,148 @@
+body{
+	background-color: $body-background-color;
+}
+
+.page-wrapper{
+	background-color: $page-background-color;
+	margin: 0 80px;
+	@include mq-medium{
+		margin: 0;
+	}
+
+	@include mq-small{
+		margin: 0;
+	}
+}
+
+.page-content{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.page-content-wrapper{
+	background-color: $section1-background-color;
+	text-align: center;
+	font-family: "HelveticaNeue Light";
+	color: $main-text-color;
+	
+	h2{
+		padding-top: 40px;
+		padding-bottom: 5px;
+		font-size: 1.5em;
+
+		@include mq-small{
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
+
+	p{
+		padding-top: 5px;
+		padding-bottom: 40px;
+
+		font-size: 0.9em;
+		max-width: 500px;
+		margin: 0 auto;
+
+		@include mq-small{
+			margin: 0 15px;
+		}
+	}
+	
+
+	span{
+		flex: 1;
+		font: 0.9em "HelveticaNeue Light";
+		@include mq-small{
+			margin-left: 15px;
+			margin-top: 15px;
+			font: 0.7em "HelveticaNeue Light";
+		}
+	}
+
+	i{
+		padding-right: 5px;
+	}
+}
+
+.service-fee-ads{
+	@include flex-display;
+	@include flex-flow(row, nowrap);
+	background-color: $ads-abox-background;
+
+	@include mq-small{
+		display: block;
+	}
+
+	p{
+		font: 0.9em "HelveticaNeue";
+		color: $ads-box-text-color;
+		padding-bottom: 50px;
+		text-transform: uppercase;
+
+		@include mq-small{
+			padding-bottom: 20px;
+		}
+	}
+}
+
+%leftpart-rightpart-mqsmall{
+	@include mq-small{
+		font: 2em "HelveticaNeue Light";
+		padding-top: 20px;
+		padding-bottom: 5px;			
+	}
+}
+
+.service-fee-ads__first-part{
+	@include flex(1);
+	
+	p:first-child{
+		font: 3em "HelveticaNeue Light";
+		padding-top: 50px;
+		padding-bottom: 5px;
+		@extend %leftpart-rightpart-mqsmall
+	}
+}
+
+.service-fee-ads__second-part{
+	@include flex(1);
+	
+	p:first-child{
+		font: 3em "HelveticaNeue Light";
+		padding-top: 50px;
+		padding-bottom: 5px;
+		@extend %leftpart-rightpart-mqsmall;
+	}
+}
+
+.sticked-sttm{
+	@include mq-small{
+		@include flex-display;
+		@include flex-flow(row, nowrap);
+	}
+
+}
+
+%sticked-sttm-layout{
+	margin-top: 20px;
+	text-align: left;
+	margin-bottom: 20px;
+	
+	@include flex-display;
+	@include flex-flow(row, nowrap);
+
+	@include mq-small{
+		@include flex(1);
+		@include flex-display;
+		@include flex-flow(column, wrap);
+	}
+}
+
+.sticked-sttm__first-part{
+	@extend %sticked-sttm-layout;
+}
+
+.sticked-sttm__second-part{
+	@extend %sticked-sttm-layout;
+}

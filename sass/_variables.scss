@@ -1,0 +1,44 @@
+/* */
+$base-size: 10px;
+$line-size: 20px;
+$small-size: 30px;
+$medium-size: 60px;
+$large-size: 80px;
+
+/* Media Query */
+$screen-size-small: 414px;
+$screen-size-medium: 1024px;
+$screen-size-large: 1670px;
+
+/* Color Palette */
+$primary-dark-color: rgb(22, 27, 31);
+$secondary-dark-color: rgb(27, 33, 38);
+
+$primary-light-color: white;
+$secondary-light-color: rgb(243, 243, 243);
+
+$tertinary-dark: rgb(62, 75, 87);
+$quaternary-dark: rgb(66, 85, 112);
+
+$primary-medium: rgb(41, 150, 204);
+$secondary-medium: rgb(128, 154, 229);
+
+/* Functional Variables */
+$body-background-color: $primary-dark-color;
+$page-background-color: $primary-light-color;
+$section1-background-color: $primary-light-color;
+$section2-background: $secondary-light-color;
+$footer-background: $secondary-dark-color;
+
+$headline-color: $primary-light-color;
+$main-text-color: $quaternary-dark;
+$secondary-text-color: $tertinary-dark;
+$ads-box-text-color: $primary-light-color;
+
+$buttom-color: $primary-light-color;
+$footer-menu-text-color: $primary-light-color;
+$footer-menu-header-text-color: $tertinary-dark;
+
+$sign-up-button-background: $primary-medium;
+$ads-abox-background: $secondary-medium;
+
